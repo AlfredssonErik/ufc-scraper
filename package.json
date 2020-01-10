@@ -1,0 +1,17 @@
+{
+	"name": "ufc-scraper",
+	"version": "1.0.0",
+	"description": "Scraper for the ufc",
+	"main": "server.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "node server.js"
+	},
+	"author": "Erik Alfredsson",
+	"license": "ISC",
+	"dependencies": {
+		"cheerio": "^1.0.0-rc.3",
+		"express": "^4.17.1",
+		"request": "^2.88.0"
+	}
+}
