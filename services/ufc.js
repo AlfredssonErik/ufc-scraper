@@ -90,6 +90,48 @@ function getFighter(fighter) {
 						}
 					}
 				});
+				fighter.history = [];
+				$('.l-listing__item','.view-athlete-results').each(function(i, elem) {
+					var event = $('.c-card-event--athlete-results__logo h2', elem).text().trim();
+					var name = $('.c-card-event--athlete-results__headline', elem).text().trim();
+					var date = $('.c-card-event--athlete-results__date .datetime', elem).text().trim();
+
+					// Who won?
+					var winPosition = undefined;
+					$('.c-card-event--athlete-results__matchup > div', elem).each(function(i, elem){
+						var state = $('.c-card-event--athlete-results__plaque.win', elem).text().trim();;
+						if (state == 'Win') winPosition = i; 
+					});
+					// We now know position of winner, 0 or 1
+					// Now we need to know position of our fighter
+					var lastName = fighter.name.split(' ')[1];
+					var fighterPositions = name.split(' vs ');
+					var figherIndex = fighterPositions.indexOf(lastName);
+					// If the positions match, it's a win
+					var result = (figherIndex === winPosition) ? 'Win' : 'Loss';
+
+					if (event && date) {
+						fighter.history[i] = {
+							event: event,
+							name: name,
+							date: date,
+							result: result
+						}
+					}
+					// Fight stats
+					var stats = [];
+					var date = $('.c-card-event--athlete-results__results .c-card-event--athlete-results__result', elem).each(function(i, elem){
+						var label = $('.c-card-event--athlete-results__result-label', elem).text().trim();
+						var text = $('.c-card-event--athlete-results__result-text', elem).text().trim();
+						if (label && text) {
+							stats[i] = {
+								label: label,
+								text: text
+							}
+						}
+					});
+					fighter.history[i].stats = stats;
+				});
 				resolve(fighter)
 			}
 		});
