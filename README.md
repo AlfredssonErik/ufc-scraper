@@ -47,7 +47,7 @@ Example:
       {
         event: 'UFC 239',
         name: 'Jones vs Santos',
-        date: 'Jul. 6, 2019',
+        date: 'Jul 6 2019',
         win: true,
         stats: [
         {
