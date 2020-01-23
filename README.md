@@ -4,17 +4,17 @@ This is a node server used by [https://github.com/AlfredssonErik/ufc-fighter-len
 `/rankings`
 Returns the top 15 fighters for each division.<br>
 Example:
-```json
+```javascript
 [
- {
-	 name: 'divisionName',
-	 fighers: [
-		 {
-			 name: 'fighterName',
-			 link: 'link-to-athlete'
-		 }
-	 ]
- }
+  {
+    name: 'divisionName',
+    fighers: [
+      {
+        name: 'fighterName',
+        link: 'link-to-athlete'
+      }
+    ]
+  }
 ]
 ```
 
