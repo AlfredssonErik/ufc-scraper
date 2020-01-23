@@ -108,14 +108,14 @@ function getFighter(fighter) {
 					var fighterPositions = name.split(' vs ');
 					var figherIndex = fighterPositions.indexOf(lastName);
 					// If the positions match, it's a win
-					var result = (figherIndex === winPosition) ? 'Win' : 'Loss';
+					var win = (figherIndex === winPosition) ? true : false;
 
 					if (event && date) {
 						fighter.history[i] = {
 							event: event,
 							name: name,
 							date: date,
-							result: result
+							win: win
 						}
 					}
 					// Fight stats
