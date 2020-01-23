@@ -32,16 +32,16 @@ Example:
     stats: [
     {
 	  text: 'Striking accuracy',
-      figue: '58%'
-	}
-	...
+      figure: '58%'
+    }
+    ...
     ]
     bio: [
     {
       text: 'Age',
       figure: '31
     }
-      ...
+    ...
     ]
     history: [
       {
