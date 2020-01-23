@@ -1,4 +1,4 @@
-This is a node server used by [https://github.com/AlfredssonErik/ufc-fighter-lens](https://github.com/AlfredssonErik/ufc-fighter-lens). 
+This is a node server for scraping UFC data, used by [https://github.com/AlfredssonErik/ufc-fighter-lens](https://github.com/AlfredssonErik/ufc-fighter-lens). 
 
 ## Available Scripts
 
