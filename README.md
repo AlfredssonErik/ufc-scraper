@@ -1,5 +1,13 @@
 This is a node server used by [https://github.com/AlfredssonErik/ufc-fighter-lens](https://github.com/AlfredssonErik/ufc-fighter-lens). 
 
+## Available Scripts
+
+In the project directory, run:
+
+`node server.js`
+
+Runs the server on port 4000.
+
 ## Endpoints
 
 ### /rankings
@@ -61,17 +69,3 @@ Example:
   ...
 ]
 ```
-
-
-
-## Available Scripts
-
-In the project directory, run:
-
-### `npm start`
-
-Runs the app in the development mode on port 3000.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.
