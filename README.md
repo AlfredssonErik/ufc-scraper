@@ -30,7 +30,7 @@ Example:
 
 ### /athlete/:name
 Returns biography, stats and history for a fighter<br>
-Example:
+Example for /athelete/jon-jones:
 ```javascript
 [
   {
