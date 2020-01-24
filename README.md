@@ -29,7 +29,7 @@ Example:
 ```
 
 ### /athlete/:name
-Returns biograpghy, stats and history for a fighter<br>
+Returns biography, stats and history for a fighter<br>
 Example:
 ```javascript
 [
