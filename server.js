@@ -2,8 +2,8 @@ var express = require("express");
 var app = express();
 var ufc = require('./services/ufc')
 
-app.listen(4000, () => {
-	console.log("Server running on port 4000");
+app.listen(process.env.PORT || 3000, () => {
+	console.log("Server running on env port or port 3000");
 });
 
 app.get("/athlete/:name", (req, res, next) => {
